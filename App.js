@@ -22,3 +22,8 @@ const container = React.createElement("div", { id: container }, [
   heading1,
   heading2,
 ]);
+
+const root = React.createRoot(document.getElementById("root"));
+
+//passing a react element inside the root
+root.render(container);
