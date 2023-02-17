@@ -1,0 +1,19 @@
+{
+  "name": "react-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GarryAmasia/react-1.git"
+  },
+  "author": "garry amasia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GarryAmasia/react-1/issues"
+  },
+  "homepage": "https://github.com/GarryAmasia/react-1#readme"
+}
