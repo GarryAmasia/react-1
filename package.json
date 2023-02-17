@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/GarryAmasia/react-1/issues"
   },
-  "homepage": "https://github.com/GarryAmasia/react-1#readme"
+  "homepage": "https://github.com/GarryAmasia/react-1#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
 }
