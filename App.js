@@ -9,11 +9,12 @@
 // * Parcel using consistent hashing algorithms
 // * Parcel is zero config( we dont need to do setting up(configuration ))
 // * TRANSITIVE DEPENDENCIES ==> means that 1 dependency will depend on other dependencies and other dependencies will need other other dependencies.
-// * browserlist.dev !important
+// * browserlist.dev(website) !important
 // * Parcel will create a server which is : localhost:1234
 // * Parcel does tree shacking --> removing un-wanted code --> lets say in the process of building an app, you are calling library to speed up the process, and that library is enable you to use its power as a helper(example: ti gives you 20 functions that you can use),BUT!!!! you only want to use 4 functions, then Parcel will remove other 16 function in order to optimize your app
 // * Parcel doesnt remove console.log(in npm run build), therfore we need to install plugin called " npm install babel-plugin-transform-remove-console"
 // * Babel is came along when we install Parcel as dependency
+//* jsx will not work if there is NOT babel installed
 
 import React from "react";
 import ReactDOM from "react-dom/client ";

@@ -2935,11 +2935,12 @@ try {
 // * Parcel using consistent hashing algorithms
 // * Parcel is zero config( we dont need to do setting up(configuration ))
 // * TRANSITIVE DEPENDENCIES ==> means that 1 dependency will depend on other dependencies and other dependencies will need other other dependencies.
-// * browserlist.dev !important
+// * browserlist.dev(website) !important
 // * Parcel will create a server which is : localhost:1234
 // * Parcel does tree shacking --> removing un-wanted code --> lets say in the process of building an app, you are calling library to speed up the process, and that library is enable you to use its power as a helper(example: ti gives you 20 functions that you can use),BUT!!!! you only want to use 4 functions, then Parcel will remove other 16 function in order to optimize your app
 // * Parcel doesnt remove console.log(in npm run build), therfore we need to install plugin called " npm install babel-plugin-transform-remove-console"
 // * Babel is came along when we install Parcel as dependency
+//* jsx will not work if there is NOT babel installed
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
@@ -2971,7 +2972,7 @@ const heading3 = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     children: "This is JSX!!"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 43,
+    lineNumber: 44,
     columnNumber: 18
 }, undefined);
 //Lets create functional component
@@ -2982,7 +2983,7 @@ const HeaderComponent = ()=>{
         children: "Namaste React component"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 49,
+        lineNumber: 50,
         columnNumber: 10
     }, undefined);
 };
@@ -2998,7 +2999,7 @@ const root = (0, _clientDefault.default).createRoot(document.getElementById("roo
 // root.render(container);
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeaderComponent, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 58,
+    lineNumber: 59,
     columnNumber: 13
 }, undefined));
 var _c;
