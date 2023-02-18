@@ -45,6 +45,9 @@ const heading2 = React.createElement(
   "Heading2 made from React.createElement",
 );
 
+//JSX!!!!!!
+const heading3 = <h1>This is JSX!!</h1>;
+
 const container = React.createElement("div", { id: "container" }, [
   heading1,
   heading2,
