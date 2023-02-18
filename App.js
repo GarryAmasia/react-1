@@ -13,10 +13,7 @@
 // * Parcel will create a server which is : localhost:1234
 // * Parcel does tree shacking --> removing un-wanted code --> lets say in the process of building an app, you are calling library to speed up the process, and that library is enable you to use its power as a helper(example: ti gives you 20 functions that you can use),BUT!!!! you only want to use 4 functions, then Parcel will remove other 16 function in order to optimize your app
 // * Parcel doesnt remove console.log(in npm run build), therfore we need to install plugin called " npm install babel-plugin-transform-remove-console"
-// *
-// *
-// *
-// *
+// * Babel is came along when we install Parcel as dependency
 
 import React from "react";
 import ReactDOM from "react-dom/client ";
@@ -45,8 +42,17 @@ const heading2 = React.createElement(
   "Heading2 made from React.createElement",
 );
 
-//JSX!!!!!!
+//JSX!!!!!! is html like syntax not html inside javascript!!!!!!!->readibility,developer experience,syntatical sugar,less code,maintainablily, no repetition
+//Basically jsx is using babel to convert "const heading3 = <h1>This is JSX!!</h1>;" to React.createElement()!!!!!!!!!!!!
+//<h1>This is JSX!!</h1> --> this is html like syntax,,not HTML!!!!! -->
 const heading3 = <h1>This is JSX!!</h1>;
+
+//Lets create functional component
+//functional component is just a function that returns jsx code/react element!
+// Capital letter is not mandatory but its good practice to have capoital letter
+const HeaderComponent = () => {
+  return <h1>Namaste React component</h1>;
+};
 
 const container = React.createElement("div", { id: "container" }, [
   heading1,
@@ -56,4 +62,5 @@ const container = React.createElement("div", { id: "container" }, [
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 //passing a react element inside the root
-root.render(container);
+// root.render(container);
+root.render(<HeaderComponent />);
